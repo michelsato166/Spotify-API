@@ -5,8 +5,8 @@ from youtubesearchpython import VideosSearch
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
 
-CLIENT_ID = "7e80d59a712241e19354bf1937cc9139"
-CLIENT_SECRET = "ebc64fa694a94f4dacb5b6a6c96c6033"
+CLIENT_ID = "your client id"
+CLIENT_SECRET = "your client secret"
 
 def init_spotify():
     auth_manager = SpotifyClientCredentials(client_id=CLIENT_ID, client_secret=CLIENT_SECRET)
