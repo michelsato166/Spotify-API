@@ -22,8 +22,8 @@ def extract_playlist_id(playlist_url):
 def get_playlist_metadata(spotify, playlist_id):
     try:
         return spotify.playlist(playlist_id)
-    except Exception as e:
-        print(f"Could not fetch playlist: {e}")
+    except:
+        print(f"Could not fetch playlist.")
         return
 
 def get_playlist_tracks(spotify, playlist_id):
