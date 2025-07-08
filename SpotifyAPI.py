@@ -19,7 +19,7 @@ def extract_playlist_id(playlist_url):
         return
     return match.group(2)
 
-def get_playlist_metadata(spotify, playlist_id):
+def get_playlist_adata(spotify, playlist_id):
     try:
         return spotify.playlist(playlist_id)
     except:
@@ -85,7 +85,7 @@ def main():
     spotify = init_spotify()
 
     playlist_id = extract_playlist_id(playlist_url)
-    playlist = get_playlist_metadata(spotify, playlist_id)
+    playlist = get_playlist_mdata(spotify, playlist_id)
     if not playlist:
         return
 
